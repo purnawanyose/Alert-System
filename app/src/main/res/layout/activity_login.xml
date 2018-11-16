@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_port"
+    tools:context="com.semenindonesia.sisi.mtbf_mttr.activities.LoginActivity">
+
+    <com.semenindonesia.sisi.mtbf_mttr.adapter.myViewPager
+        android:id="@+id/login_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_sms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/login_linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/semensi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_m"
+                    android:text="@string/mso"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@color/colorChipBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mso_motto"
+                    android:textSize="@dimen/font_s"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <com.lamudi.phonefield.PhoneInputLayout
+                    android:id="@+id/phone_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:hint="Insert Your Phone Number"
+                    android:maxLines="1"
+                    android:padding="10dp"/>
+
+                <!--tidak dipakai-->
+                <!--<android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="20dip"
+                        android:gravity="center_horizontal"
+                        android:hint="Insert Your Phone Number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:visibility="gone"/>
+                </android.support.design.widget.TextInputLayout>-->
+
+                <Button
+                    android:id="@+id/sign_in"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/border_radius"
+                    android:text="Login"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logoall"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_otp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_port"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/semensi" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Insert your verification code to continue"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="(Insert your verification code below)"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/inputOtp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:hint="Enter Code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_verify_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_radius"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </com.semenindonesia.sisi.mtbf_mttr.adapter.myViewPager>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_edit_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_edit_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_m" />
+
+            <ImageButton
+                android:id="@+id/btn_edit_mobile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:tint="@android:color/black"
+                android:src="@drawable/ic_edit_mobile" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

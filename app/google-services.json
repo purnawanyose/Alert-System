@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "299033213693",
+    "firebase_url": "https://mtbfmtff.firebaseio.com",
+    "project_id": "mtbfmtff",
+    "storage_bucket": "mtbfmtff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299033213693:android:0dd8355505cae12e",
+        "android_client_info": {
+          "package_name": "com.project.yose.mtbfmtff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299033213693-ne735hfjhdrv97hauddeusp64h0ae391.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnJTfn_aUB6IbE_smk1jGb-9bOjpRDvA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299033213693:android:b6d1f9e5a9c88711",
+        "android_client_info": {
+          "package_name": "com.semenindonesia.sisi.mtbf_mttr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299033213693-ne735hfjhdrv97hauddeusp64h0ae391.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnJTfn_aUB6IbE_smk1jGb-9bOjpRDvA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
